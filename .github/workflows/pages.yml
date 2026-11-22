@@ -17,15 +17,22 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  deploy:
+  # Deux jobs, comme le modèle officiel : l'artefact envoyé dans un job n'est pas toujours
+  # visible par l'API dans ce même job (« Found 0 artifact(s) »).
+  build:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/upload-pages-artifact@v5
         with:
           path: .
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
       - id: deployment
         uses: actions/deploy-pages@v5
