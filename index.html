@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AeroCarbon Solutions : pitch</title>
+  <meta name="description" content="LE03 Speaking 1 : pitch d'AeroCarbon Solutions, une machine qui capte le CO2 de l'air et le transforme en carburant liquide.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%2306141c' stroke='%233fd6c4' stroke-width='6'/%3E%3Cpath d='M50 24 C62 42 70 52 70 62 a20 20 0 0 1 -40 0 C30 52 38 42 50 24Z' fill='%23f2b33d'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/theme.css">
+  <script>if (/[?&]print\b/.test(location.search)) document.documentElement.classList.add("print");</script>
+</head>
+<body>
+  <!-- Pictogrammes réutilisés (trait = currentColor) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="logo" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="44" fill="none" stroke="#3fd6c4" stroke-width="5"/>
+        <circle cx="26" cy="38" r="6" fill="#9aa7b8"/><circle cx="38" cy="30" r="8" fill="#e8f4f2"/><circle cx="50" cy="22" r="6" fill="#9aa7b8"/>
+        <path d="M58 40 C66 52 72 59 72 66 a14 14 0 0 1 -28 0 C44 59 50 52 58 40Z" fill="#f2b33d"/>
+      </symbol>
+      <symbol id="i-air" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"><path d="M6 22 H40 a8 8 0 1 0 -8 -8"/><path d="M6 34 H50 a8 8 0 1 1 -8 8"/><path d="M6 46 H28"/></g></symbol>
+      <symbol id="i-filter" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"><rect x="10" y="8" width="44" height="48" rx="6"/><path d="M20 8 V56 M28 8 V56 M36 8 V56 M44 8 V56"/></g></symbol>
+      <symbol id="i-h2" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"><path d="M36 4 L20 34 H32 L28 60 L46 26 H34 Z"/></g></symbol>
+      <symbol id="i-cat" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-width="3.5" stroke-linejoin="round"><path d="M32 6 L54 19 V45 L32 58 L10 45 V19 Z"/><path d="M32 20 L43 26 V38 L32 44 L21 38 V26 Z"/></g></symbol>
+      <symbol id="i-fuel" viewBox="0 0 64 64"><path d="M32 6 C42 22 50 32 50 42 a18 18 0 0 1 -36 0 C14 32 22 22 32 6Z" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/><path d="M24 42 a8 8 0 0 0 8 8" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></symbol>
+      <symbol id="i-bolt" viewBox="0 0 64 64"><path d="M36 4 L14 36 H30 L26 60 L50 26 H34 Z" fill="currentColor"/></symbol>
+      <symbol id="i-grid" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"><path d="M32 4 L20 60 M32 4 L44 60 M14 18 H50 M18 32 H46 M24 32 L40 46 M40 32 L24 46"/></g></symbol>
+      <symbol id="i-boat" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"><path d="M8 40 H56 L48 52 H16 Z"/><path d="M30 40 V8 L46 34 H30"/><path d="M4 58 q7 -5 14 0 t14 0 t14 0 t14 0"/></g></symbol>
+      <symbol id="i-mountain" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"><path d="M4 56 L24 18 L36 38 L44 26 L60 56 Z"/><path d="M18 30 L24 34 L30 28"/></g></symbol>
+    </defs>
+  </svg>
+
+  <canvas id="bg" aria-hidden="true"></canvas>
+
+  <main id="stage">
+
+    <!-- 1 · Titre (Lelio) -->
+    <section class="slide" data-title="Title">
+      <div class="hero">
+        <div class="logo" data-anim style="--i:0"><svg aria-hidden="true"><use href="#logo"/></svg><span>Aero<b>Carbon</b> Solutions</span></div>
+        <h1 data-anim style="--i:1">From thin air <span class="amb">to clean fuel.</span></h1>
+        <p class="lead" data-anim style="--i:2">A machine that captures CO<sub>2</sub> directly from the air and turns it into liquid fuel.</p>
+        <div class="who" data-anim style="--i:3"><b>Lelio</b> &amp; <b>Eloi</b> · LE03 Speaking 1 · Investor pitch</div>
+      </div>
+    </section>
+
+    <!-- 2 · Le problème + graphique 1 (Lelio) -->
+    <section class="slide" data-title="The problem">
+      <header class="head"><div class="kicker">The problem</div><h2>Batteries can't move the heavy world</h2></header>
+      <div class="cols c-left main">
+        <div class="vc">
+          <ul class="lst">
+            <li data-step="1">Cars: we <em>can</em> electrify them</li>
+            <li data-step="2">Helicopters, cargo ships, big trucks: batteries are <em>far too heavy</em></li>
+            <li data-step="4">They still need <span class="amb"><b>liquid fuel</b></span></li>
+          </ul>
+        </div>
+        <div class="panel vc" data-step="3">
+          <div class="chart-title"><b>Energy stored per kilogram</b> (Wh/kg)</div>
+          <div class="hbars">
+            <div class="hbar"><div class="lab">Diesel</div><div class="track" style="--v:97.2%"><div class="fill"></div><div class="val">≈ 12,600</div></div></div>
+            <div class="hbar"><div class="lab">Jet fuel<small>kerosene</small></div><div class="track" style="--v:91.5%"><div class="fill"></div><div class="val">≈ 11,900</div></div></div>
+            <div class="hbar batt"><div class="lab">Li-ion battery<small>best cells</small></div><div class="track" style="--v:1.9%"><div class="fill"></div><div class="val">≈ 250</div></div></div>
+          </div>
+          <div class="callout"><div class="big">×50</div><span>more energy per kg in liquid fuel</span></div>
+          <p class="source">Typical values: diesel 45.5 MJ/kg, Jet A 42.8 MJ/kg, Li-ion ≈ 0.9 MJ/kg (cell level). 1 MJ/kg ≈ 278 Wh/kg. Sources: Wikipedia “Energy density”; The Open University, <i>Transport and sustainability</i>.</p>
+        </div>
+      </div>
+      <div class="foot"><span class="brand"><svg aria-hidden="true"><use href="#logo"/></svg>AeroCarbon Solutions</span><span class="pg"></span></div>
+    </section>
+
+    <!-- 3 · Comment ça marche (Eloi) -->
+    <section class="slide" data-title="How it works">
+      <header class="head"><div class="kicker">How it works</div><h2>CO<sub>2</sub> + water from the air → liquid fuel</h2></header>
+      <div class="panel main vc">
+        <div class="power"><svg aria-hidden="true"><use href="#i-bolt"/></svg>Electricity powers the whole process</div>
+        <div class="flow">
+          <div class="node"><div class="ic"><svg style="color:var(--co2)" aria-hidden="true"><use href="#i-air"/></svg></div><b>Air</b><span>CO<sub>2</sub> and water vapour are already in it</span></div>
+          <div class="node" data-step><div class="ic"><svg style="color:var(--cyan)" aria-hidden="true"><use href="#i-filter"/></svg></div><b>Ultra-thin filters</b><span>Extract CO<sub>2</sub> and H<sub>2</sub>O</span></div>
+          <div class="node" data-step><div class="ic"><svg style="color:var(--cyan)" aria-hidden="true"><use href="#i-h2"/></svg></div><b>Electrolysis</b><span>Splits water to get hydrogen (H<sub>2</sub>)</span></div>
+          <div class="node" data-step><div class="ic"><svg style="color:var(--cyan)" aria-hidden="true"><use href="#i-cat"/></svg></div><b>5 catalysts</b><span>Carbon from CO<sub>2</sub> + hydrogen</span></div>
+          <div class="node fuel" data-step><div class="ic"><svg style="color:var(--ambre)" aria-hidden="true"><use href="#i-fuel"/></svg></div><b class="amb">Liquid fuel</b><span>High quality, works in normal engines</span></div>
+        </div>
+      </div>
+      <div class="foot"><span class="brand"><svg aria-hidden="true"><use href="#logo"/></svg>AeroCarbon Solutions</span><span class="pg"></span></div>
+    </section>
+
+    <!-- 4 · Efficacité (Eloi) -->
+    <section class="slide" data-title="Our edge: efficiency">
+      <header class="head"><div class="kicker">Our edge</div><h2>Far less electricity per litre</h2></header>
+      <div class="panel main vc">
+        <div class="eff">
+          <div class="legend"><span><i style="background:var(--ambre)"></i>Energy stored in the fuel</span><span><i style="background:rgba(255,122,107,.7)"></i>Extra electricity needed</span></div>
+          <div class="eff-row" data-step><div class="lab">Existing technologies<small>typical today</small></div><div class="blocks"><i class="fuel" style="--w:33.3%"></i><i class="extra" style="--w:66.7%"></i></div><div class="num" style="color:var(--rouge)">+200%</div></div>
+          <div class="eff-row" data-step><div class="lab">AeroCarbon<small>our technology</small></div><div class="blocks"><i class="fuel" style="--w:33.3%"></i><i class="extra" style="--w:10%"></i></div><div class="num" style="color:var(--cyan)">+30%</div></div>
+        </div>
+        <div class="ribbon" data-step>No water tank needed: the water is <em>extracted from the atmosphere</em> too.</div>
+      </div>
+      <div class="foot"><span class="brand"><svg aria-hidden="true"><use href="#logo"/></svg>AeroCarbon Solutions</span><span class="pg"></span></div>
+    </section>
+
+    <!-- 5 · Marché 1 : réseau électrique + graphique 2 (Lelio) -->
+    <section class="slide" data-title="Market 1: the power grid">
+      <header class="head"><div class="kicker">Market 1 · Cities &amp; energy companies</div><h2>A giant liquid battery for the grid</h2></header>
+      <div class="cols c-left main">
+        <div class="vc">
+          <ul class="lst">
+            <li data-step="1">More wind and solar power, but <em>we can't control the weather</em></li>
+            <li data-step="2">Peaks when production <em>exceeds demand</em></li>
+            <li data-step="4">Our machine absorbs the surplus and stores it as <span class="amb"><b>fuel</b></span></li>
+          </ul>
+        </div>
+        <div class="panel vc" data-step="3">
+          <div class="chart-title"><b>Wind &amp; solar power wasted in California</b> (curtailed, TWh per year)</div>
+          <div class="vchart" style="grid-template-rows:100%;margin-left:56px">
+            <div class="grid-line" style="bottom:25%"><span>1</span></div><div class="grid-line" style="bottom:50%"><span>2</span></div><div class="grid-line" style="bottom:75%"><span>3</span></div><div class="grid-line" style="bottom:100%"><span>4</span></div>
+            <div class="col" style="--v:37.5%"><div class="bar"></div><div class="v">≈1.5</div><div class="y">2021</div></div>
+            <div class="col" style="--v:60%"><div class="bar"></div><div class="v">2.4</div><div class="y">2022</div></div>
+            <div class="col" style="--v:65%"><div class="bar"></div><div class="v">≈2.6</div><div class="y">2023</div></div>
+            <div class="col last" style="--v:85%"><div class="bar"></div><div class="v">3.4</div><div class="y">2024</div></div>
+          </div>
+          <p class="source" style="margin-top:64px">×2.3 in three years. Source: U.S. Energy Information Administration (EIA), <i>Today in Energy</i>, CAISO grid. 2021 and 2023 derived from the EIA's year-on-year changes (+63 % in 2022, +29 % in 2024).</p>
+        </div>
+      </div>
+      <div class="foot"><span class="brand"><svg aria-hidden="true"><use href="#logo"/></svg>AeroCarbon Solutions</span><span class="pg"></span></div>
+    </section>
+
+    <!-- 6 · Marché 2 : sites isolés (Lelio) -->
+    <section class="slide" data-title="Market 2: isolated places">
+      <header class="head"><div class="kicker">Market 2 · Isolated places</div><h2>Make your own fuel, on-site</h2></header>
+      <div class="cards main">
+        <div class="card" data-step>
+          <div class="ic"><svg style="color:var(--cyan)" aria-hidden="true"><use href="#i-boat"/></svg></div>
+          <span class="pill">At sea</span>
+          <h3>A boat in the middle of the ocean</h3>
+          <div class="vs"><div><span class="x">✕</span>Fuel delivery: expensive</div><div><span class="x">✕</span>Batteries: way too heavy</div></div>
+        </div>
+        <div class="card" data-step>
+          <div class="ic"><svg style="color:var(--cyan)" aria-hidden="true"><use href="#i-mountain"/></svg></div>
+          <span class="pill">In the mountains</span>
+          <h3>A high-mountain refuge</h3>
+          <div class="vs"><div><span class="x">✕</span>Fuel delivery: expensive</div><div><span class="x">✕</span>Batteries: way too heavy</div></div>
+        </div>
+      </div>
+      <div class="ribbon amber" data-step>A <b>compact unit</b> produces fuel <span class="amb"><b>where it is used</b></span>.</div>
+      <div class="foot"><span class="brand"><svg aria-hidden="true"><use href="#logo"/></svg>AeroCarbon Solutions</span><span class="pg"></span></div>
+    </section>
+
+    <!-- 7 · La demande (Eloi) -->
+    <section class="slide" data-title="The ask">
+      <header class="head"><div class="kicker">The ask</div><h2>How much are we raising?</h2></header>
+      <div class="ask">
+        <div class="amount" data-step>$5<small>million</small></div>
+        <p>To <em>finish our first version</em> and <em>launch production</em></p>
+      </div>
+      <div class="foot"><span class="brand"><svg aria-hidden="true"><use href="#logo"/></svg>AeroCarbon Solutions</span><span class="pg"></span></div>
+    </section>
+
+    <!-- 8 · L'offre (Lelio) -->
+    <section class="slide" data-title="What you get">
+      <header class="head"><div class="kicker">What you get</div><h2>Our offer to you</h2></header>
+      <div class="main vc">
+        <div class="deal" data-step>
+          <div class="side you"><b>$5M</b><span>your investment</span></div>
+          <div class="swap">⇄</div>
+          <div class="side us"><b>10%</b><span>of AeroCarbon Solutions</span></div>
+        </div>
+        <p class="val-note">Company valued at <b>$50M</b></p>
+        <ul class="lst amber">
+          <li data-step><b>Early stage:</b> get in <em>before</em> our first pilot units are deployed</li>
+          <li data-step><b>Two revenue streams:</b> selling the machines + <em>long-term maintenance contracts</em></li>
+        </ul>
+      </div>
+      <div class="foot"><span class="brand"><svg aria-hidden="true"><use href="#logo"/></svg>AeroCarbon Solutions</span><span class="pg"></span></div>
+    </section>
+
+    <!-- 9 · Utilisation des fonds (Eloi) -->
+    <section class="slide" data-title="Use of the money">
+      <header class="head"><div class="kicker">Use of the money</div><h2>From prototype to production</h2></header>
+      <div class="panel main vc">
+        <div class="road">
+          <div class="stop" data-step><div class="n">1</div><b>Build a full-size machine</b><span>Prove it works exactly as announced</span></div>
+          <div class="stop" data-step><div class="n">2</div><b>Produce the first orders</b><span>Orders we have already received</span></div>
+          <div class="stop" data-step><div class="n">3</div><b>Get paid</b><span>Revenue from the first deliveries</span></div>
+          <div class="stop" data-step><div class="n">4</div><b>Scale up</b><span>Produce on a bigger scale</span></div>
+        </div>
+      </div>
+      <div class="foot"><span class="brand"><svg aria-hidden="true"><use href="#logo"/></svg>AeroCarbon Solutions</span><span class="pg"></span></div>
+    </section>
+
+    <!-- 10 · Merci / questions -->
+    <section class="slide" data-title="Thank you / questions">
+      <div class="end">
+        <div class="logo" style="justify-content:center;--i:0" data-anim><svg aria-hidden="true"><use href="#logo"/></svg><span>Aero<b>Carbon</b> Solutions</span></div>
+        <h1 data-anim style="--i:1">Thank you. <span class="amb">Questions?</span></h1>
+        <p data-anim style="--i:2">$5M · 10% equity · fuel from thin air</p>
+        <div class="sources" data-anim style="--i:3">
+          <b>Sources.</b> Energy density: Wikipedia, “Energy density”; The Open University, <i>Transport and sustainability</i>, section 9.1.
+          Curtailment: U.S. Energy Information Administration, <i>Today in Energy</i>, articles on CAISO wind and solar curtailment (eia.gov).
+        </div>
+      </div>
+    </section>
+
+    <!-- 11 · Réserve : rendement -->
+    <section class="slide backup" data-title="Backup: is +30% realistic?">
+      <header class="head"><div class="kicker">Backup · Q&amp;A</div><h2>Is “+30%” realistic?</h2></header>
+      <div class="panel main vc">
+        <ul class="lst amber">
+          <li data-step>The chemistry is <b>well known</b>: the challenge is doing it at scale with <em>little electricity</em></li>
+          <li data-step><b>Ultra-thin filters</b> capture CO<sub>2</sub> and water with less energy</li>
+          <li data-step><b>5 specialised catalysts</b>: each step runs in its best conditions</li>
+          <li data-step>The full-size machine is exactly what <span class="amb"><b>your money will prove</b></span></li>
+        </ul>
+      </div>
+      <div class="foot"><span class="brand"><svg aria-hidden="true"><use href="#logo"/></svg>Backup slide</span><span class="pg"></span></div>
+    </section>
+
+    <!-- 12 · Réserve : concurrence -->
+    <section class="slide backup" data-title="Backup: competition">
+      <header class="head"><div class="kicker">Backup · Q&amp;A</div><h2>Who else is doing this?</h2></header>
+      <div class="cards main" style="grid-template-columns:1fr 1fr 1fr">
+        <div class="card" data-step><span class="pill">Air capture only</span><h3>Climeworks</h3><p>Captures CO<sub>2</sub> from the air (Switzerland, Iceland) but does <b>not</b> make fuel.</p></div>
+        <div class="card" data-step><span class="pill">Big e-fuel plants</span><h3>HIF Global</h3><p>Synthetic fuel plant in Chile: huge, fixed industrial sites.</p></div>
+        <div class="card amber" data-step><span class="pill">Capture + fuel, one machine</span><h3 class="amb">AeroCarbon</h3><p>From air to fuel in one unit, from <b>grid scale</b> to <b>compact</b> isolated sites.</p></div>
+      </div>
+      <div class="foot"><span class="brand"><svg aria-hidden="true"><use href="#logo"/></svg>Backup slide</span><span class="pg"></span></div>
+    </section>
+
+  </main>
+
+  <script src="js/bg.js"></script>
+  <script src="js/deck.js"></script>
+</body>
+</html>
