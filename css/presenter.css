@@ -18,11 +18,6 @@ code { font-family: Consolas, monospace; font-size: 0.85em; background: #123844;
 
 .bar { display: flex; justify-content: space-between; align-items: center; padding: 12px 24px; border-bottom: 1px solid var(--trait); }
 .status { display: flex; align-items: center; gap: 10px; color: var(--doux); font-size: 18px; }
-.part { margin-left: 8px; padding: 2px 14px; border-radius: 14px; background: var(--turquoise); color: #06302f; font-weight: 800; }
-.part:empty { display: none; }
-.part[data-who="Eloi"] { background: var(--or); color: #2a1700; }
-.part[data-who="Both"] { background: var(--texte); color: var(--fond); }
-.part { font-size: 22px; }
 .dot { width: 12px; height: 12px; border-radius: 50%; background: var(--rouge); box-shadow: 0 0 0 3px rgba(224, 112, 95, 0.25); }
 .dot.ok { background: #6fcf6f; box-shadow: 0 0 0 3px rgba(111, 207, 111, 0.25); }
 .timer { display: flex; align-items: center; gap: 16px; }
@@ -33,6 +28,11 @@ button:hover, button:focus-visible { background: #1b4a57; outline: 2px solid var
 .grid { display: grid; grid-template-columns: 1fr 380px; overflow: hidden; gap: 24px; padding: 20px 24px; min-height: 0; }
 .notes-col { display: grid; grid-template-rows: auto 1fr; min-height: 0; }
 .crumb { display: flex; align-items: center; gap: 18px; margin-bottom: 14px; }
+/* Orateur : poussé tout à droite de la ligne ; cyan pour Lelio, ambre pour Eloi, clair pour les deux. */
+.speaker { margin-left: auto; flex: none; padding: 8px 26px; border-radius: 32px; font-size: 30px; font-weight: 800; background: var(--turquoise); color: #06302f; }
+.speaker:empty { display: none; }
+.speaker[data-who="Eloi"] { background: var(--or); color: #2a1700; }
+.speaker[data-who="Both"] { background: var(--texte); color: var(--fond); }
 #num { flex: none; min-width: 64px; height: 64px; padding: 0 14px; border-radius: 32px; background: var(--turquoise); color: #06302f; font-weight: 800; font-size: 26px; display: grid; place-items: center; }
 h1 { font-family: "Space Grotesk", "Segoe UI", sans-serif; font-weight: 700; font-size: 36px; margin: 0; }
 h2 { margin: 0 0 10px; font-size: 16px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--doux); }

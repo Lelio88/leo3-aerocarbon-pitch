@@ -8,6 +8,7 @@
  * Choix non évidents :
  *  - Le texte parlé est celui des auteurs, MOT POUR MOT (choix explicite : ne pas le corriger).
  *  - Les indications entre crochets [en français] sont des didascalies, pas du texte à dire.
+ *    Tout ce qui est hors crochets se dit, et se dit en anglais.
  *
  * Invariant : l'ordre et le nombre de slides suivent index.html, et le nombre de lignes de
  * `notes` vaut 1 + le nombre d'étapes (data-step) de la slide.
@@ -27,7 +28,7 @@ window.SLIDES = [
       "Today, we have a big problem with the green transition:",
       "we can electrify cars, sure,",
       "but we can’t put heavy batteries in helicopters, cargo ships, or big trucks.",
-      "[Montrer le graphique : à poids égal, le carburant stocke environ 50 fois plus d'énergie qu'une batterie.]",
+      "[Montrer le graphique] Look at this graph: per kilogram, liquid fuel stores about 50 times more energy than a battery.",
       "They still need liquid fuel. This is our solution. Eloi is going to explain what our product looks like and how it actually works.",
     ],
     qa: [
@@ -41,7 +42,7 @@ window.SLIDES = [
       "As Lelio just said, the concept is to use carbon dioxide and water to make our fuel. The chemistry behind this process is not as complicated that we could believe and is already knowed. The problem is that when you want to make a big quantity without using crazy amounts of electricity, everything becomes very complex.",
       "Our solution uses multiple extremely thin filters to extract CO2 and H2O from the air.",
       "We use electricity to make electrolyses which allow us to get hydrogen.",
-      "The next step is to extract the carbon from the CO2 and to add the hydrogène using 5 different catalyseurs",
+      "The next step is to extract the carbon from the CO2 and to add the hydrogen using 5 different catalysts",
       "to produce an excellent quality fuel using only 30% more energy in electricity than the energy stocked in the liquid fuel.",
     ],
     qa: [
@@ -53,8 +54,8 @@ window.SLIDES = [
     speaker: "Eloi",
     notes: [
       "As I just said, our technology is extremely efficient",
-      "especially compared to what was made by other technologies before. [Ligne du haut : environ +200 % aujourd'hui.]",
-      "[Ligne du bas : AeroCarbon, seulement +30 %.]",
+      "especially compared to what was made by other technologies before. [Ligne du haut] Today, they need about 200% more electricity than the energy in the fuel.",
+      "[Ligne du bas] With AeroCarbon, we only need 30% more.",
       "Also, this solution doesn’t need a water tank because it is already extracted from the atmosphere.",
     ],
     qa: [
@@ -68,7 +69,7 @@ window.SLIDES = [
       "Thanks, Eloi. So, who needs this? We actually see two main markets for our technology. First, at a large industrial scale, for cities and energy companies.",
       "As we shift towards more wind or solar power, it becomes harder to manage fluctuations in our electricity production.",
       "Since we can’t control the weather, we will face major peaks when production exceeds demand.",
-      "[Montrer le graphique : en Californie, l'électricité éolienne et solaire gaspillée a été multipliée par 2,3 en trois ans.]",
+      "[Montrer le graphique] For example, in California, the wind and solar power that is wasted every year more than doubled in just three years.",
       "With our system, we can absorb that excess electricity to capture carbon dioxide and produce fuel. So, in a way, our machine acts like a big liquid battery that helps stabilize the power grid, while making fuel that works in normal engines.",
     ],
     qa: [
@@ -128,7 +129,7 @@ window.SLIDES = [
     title: "Thank you / questions",
     speaker: "Both",
     notes: [
-      "[Fin du pitch : remercier et inviter aux questions. Slides de réserve : 11 (+30 % réaliste ?) et 12 (concurrence). Taper le numéro au clavier pour y sauter.]",
+      "[Ensemble] Thank you for your attention. We are now ready to answer your questions. [Slides de réserve : 11 (+30 % réaliste ?) et 12 (concurrence). Taper le numéro au clavier pour y sauter.]",
     ],
     qa: [
       { q: "Is your fuel really clean? You still burn it.", a: "When it burns, it releases the CO2 we took from the air. So the cycle is almost carbon-neutral, as long as we use renewable electricity." },

@@ -41,8 +41,9 @@
     const slide = SLIDES[index];
     $("num").textContent = `${index + 1} / ${total}`;
     $("title").textContent = slide.title;
-    $("part").textContent = slide.speaker ? `Speaker: ${slide.speaker}` : "";
-    $("part").dataset.who = slide.speaker || "";
+    // Orateur, aligné à droite sur la ligne du numéro de slide.
+    $("speaker").textContent = slide.speaker === "Both" ? "Lelio & Eloi" : slide.speaker || "";
+    $("speaker").dataset.who = slide.speaker || "";
 
     // Notes : la ligne k correspond à l'étape k ; la ligne courante est mise en avant.
     const inner = $("notes-inner");
