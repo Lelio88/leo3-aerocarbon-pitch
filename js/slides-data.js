@@ -2,8 +2,8 @@
  * Notes du présentateur, affichées dans presenter.html (jamais sur l'écran public).
  *
  * Pour chaque slide : `title`, `speaker` (Lelio, Eloi ou Both), `notes` (notes[0] = ouverture,
- * notes[k] = ce qu'on dit quand la k-ième étape apparaît) et `qa` (questions probables, réponses
- * en anglais, prêtes à dire).
+ * notes[k] = ce qu'on dit quand la k-ième étape apparaît) et `qa` (questions probables et réponses,
+ * en français : pense-bête, la réponse se donne en anglais à l'oral).
  *
  * Choix non évidents :
  *  - Le texte parlé est celui des auteurs, MOT POUR MOT (choix explicite : ne pas le corriger).
@@ -32,7 +32,7 @@ window.SLIDES = [
       "They still need liquid fuel. This is our solution. Eloi is going to explain what our product looks like and how it actually works.",
     ],
     qa: [
-      { q: "Why not use hydrogen directly?", a: "Hydrogen is very hard to store and to transport, and it doesn't work in normal engines. Our liquid fuel works with the engines and the infrastructure we already have." },
+      { q: "Pourquoi ne pas utiliser directement l'hydrogène ?", a: "L'hydrogène est très difficile à stocker et à transporter, et il ne fonctionne pas dans les moteurs classiques. Notre carburant liquide fonctionne avec les moteurs et les infrastructures qui existent déjà." },
     ],
   },
   {
@@ -46,7 +46,7 @@ window.SLIDES = [
       "to produce an excellent quality fuel using only 30% more energy in electricity than the energy stocked in the liquid fuel.",
     ],
     qa: [
-      { q: "What kind of fuel do you produce?", a: "A synthetic hydrocarbon fuel, very close to diesel or kerosene, so it works in normal engines without any modification." },
+      { q: "Quel type de carburant produisez-vous ?", a: "Un carburant de synthèse (hydrocarbure), très proche du diesel ou du kérosène : il fonctionne dans les moteurs classiques sans aucune modification." },
     ],
   },
   {
@@ -59,7 +59,7 @@ window.SLIDES = [
       "Also, this solution doesn’t need a water tank because it is already extracted from the atmosphere.",
     ],
     qa: [
-      { q: "Is +30% really possible?", a: "Go to backup slide 11. Today it is about +200%. Our ultra-thin filters and our five catalysts are the breakthrough, and the full-size machine will prove it." },
+      { q: "Le +30 % est-il vraiment possible ?", a: "Aller à la slide de réserve 11. Aujourd'hui on est autour de +200 %. Nos filtres ultra-fins et nos 5 catalyseurs sont la percée technologique, et la machine taille réelle le prouvera." },
     ],
   },
   {
@@ -73,8 +73,8 @@ window.SLIDES = [
       "With our system, we can absorb that excess electricity to capture carbon dioxide and produce fuel. So, in a way, our machine acts like a big liquid battery that helps stabilize the power grid, while making fuel that works in normal engines.",
     ],
     qa: [
-      { q: "Why not just use big batteries for the grid?", a: "Batteries store electricity for a few hours. Fuel can be stored for months, transported anywhere, and used directly in heavy transport." },
-      { q: "Where do your numbers come from?", a: "From the U.S. Energy Information Administration: California wasted 3.4 terawatt-hours of wind and solar power in 2024." },
+      { q: "Pourquoi ne pas utiliser simplement de grosses batteries pour le réseau ?", a: "Les batteries stockent l'électricité quelques heures. Le carburant se stocke des mois, se transporte partout et s'utilise directement dans le transport lourd." },
+      { q: "D'où viennent vos chiffres ?", a: "De l'agence américaine de l'énergie (EIA) : la Californie a gaspillé 3,4 TWh d'électricité éolienne et solaire en 2024." },
     ],
   },
   {
@@ -87,7 +87,7 @@ window.SLIDES = [
       "With a compact unit, they can just produce their own fuel on-site. Now, let’s talk about money. Eloi, how much do we need to launch this?",
     ],
     qa: [
-      { q: "Where does a compact unit get its electricity?", a: "From local solar panels or wind turbines: the unit turns that electricity into fuel that can be stored." },
+      { q: "D'où vient l'électricité d'une unité compacte ?", a: "De panneaux solaires ou d'éoliennes sur place : l'unité transforme cette électricité en carburant qu'on peut stocker." },
     ],
   },
   {
@@ -108,7 +108,7 @@ window.SLIDES = [
       "We plan to make money not just by selling the machines, but also through long-term maintenance contracts. It’s a concrete way to invest in a technology that solves the two biggest problems of humankind : energy storage and clean fuel for heavy transport. I will let Eloi tell you how we’re going to spend that money and finish up.",
     ],
     qa: [
-      { q: "Why is your company worth $50 million?", a: "Because we have a breakthrough technology, two big markets, orders we have already received, and recurring revenue from maintenance contracts. And you get in before our first pilot units." },
+      { q: "Pourquoi votre entreprise vaudrait-elle 50 millions de dollars ?", a: "Parce que nous avons une technologie de rupture, deux grands marchés, des commandes déjà reçues et des revenus récurrents grâce aux contrats de maintenance. Et l'investisseur entre avant nos premières unités pilotes." },
     ],
   },
   {
@@ -122,7 +122,7 @@ window.SLIDES = [
       "and have enough money to continue to produce on a bigger scale.",
     ],
     qa: [
-      { q: "When will you be profitable?", a: "As soon as we deliver the first orders we have already received. After that, maintenance contracts bring regular revenue." },
+      { q: "Quand serez-vous rentables ?", a: "Dès la livraison des premières commandes, déjà reçues. Ensuite, les contrats de maintenance apportent des revenus réguliers." },
     ],
   },
   {
@@ -132,9 +132,9 @@ window.SLIDES = [
       "[Ensemble] Thank you for your attention. We are now ready to answer your questions. [Slides de réserve : 11 (+30 % réaliste ?) et 12 (concurrence). Taper le numéro au clavier pour y sauter.]",
     ],
     qa: [
-      { q: "Is your fuel really clean? You still burn it.", a: "When it burns, it releases the CO2 we took from the air. So the cycle is almost carbon-neutral, as long as we use renewable electricity." },
-      { q: "What is your biggest risk?", a: "Scaling up. That is exactly why the first step is a full-size machine, to prove the technology before mass production." },
-      { q: "Who are your competitors?", a: "Go to backup slide 12." },
+      { q: "Votre carburant est-il vraiment propre ? Vous le brûlez quand même.", a: "En brûlant, il relâche le CO2 que nous avons pris dans l'air. Le cycle est donc quasiment neutre en carbone, à condition d'utiliser de l'électricité renouvelable." },
+      { q: "Quel est votre plus gros risque ?", a: "Le passage à grande échelle. C'est justement pour ça que la première étape est une machine taille réelle : prouver la technologie avant la production en série." },
+      { q: "Qui sont vos concurrents ?", a: "Aller à la slide de réserve 12." },
     ],
   },
   {
@@ -148,7 +148,7 @@ window.SLIDES = [
       "And the full-size machine is exactly what your money will prove.",
     ],
     qa: [
-      { q: "And if you only reach +60%?", a: "We would still need about half the electricity of existing technologies, so we would still be very competitive." },
+      { q: "Et si vous n'atteignez que +60 % ?", a: "Il nous faudrait encore environ moitié moins d'électricité que les technologies existantes : nous resterions très compétitifs." },
     ],
   },
   {
