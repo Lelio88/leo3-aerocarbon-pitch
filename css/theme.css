@@ -111,6 +111,9 @@ sub { font-size: 0.62em; }
 /* ---------- Étapes (révélées une à une par deck.js) ---------- */
 [data-step] { opacity: 0; transform: translateY(18px); transition: opacity 0.5s ease, transform 0.5s ease; }
 [data-step].on { opacity: 1; transform: none; }
+/* Puce révélée en même temps que la précédente (même étape, sans data-step propre). */
+.with-prev { opacity: 0; transform: translateY(18px); transition: opacity 0.5s ease, transform 0.5s ease; }
+.on + .with-prev, .print .with-prev { opacity: 1; transform: none; }
 
 /* ---------- Titre ---------- */
 .hero { margin: auto 0; max-width: 1400px; }
@@ -284,6 +287,6 @@ sub { font-size: 0.62em; }
 .print .panel, .print .card { backdrop-filter: none; }
 
 @media (prefers-reduced-motion: reduce) {
-  [data-step], [data-anim], .fill, .bar { transition: none !important; animation: none !important; }
+  [data-step], .with-prev, [data-anim], .fill, .bar { transition: none !important; animation: none !important; }
   [data-anim] { opacity: 1; transform: none; }
 }

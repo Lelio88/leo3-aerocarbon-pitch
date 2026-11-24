@@ -29,7 +29,7 @@ window.SLIDES = [
       "we can electrify cars, sure,",
       "but we can’t put heavy batteries in helicopters, cargo ships, or big trucks.",
       "[Montrer le graphique] Look at this graph: per kilogram, liquid fuel stores about 50 times more energy than a battery.",
-      "They still need liquid fuel. This is our solution. Eloi is going to explain what our product looks like and how it actually works.",
+      "They still need liquid fuel. This is our solution. Eloi is going to explain how our product actually works.",
     ],
     qa: [
       { q: "Pourquoi ne pas utiliser directement l'hydrogène ?", a: "L'hydrogène est très difficile à stocker et à transporter, et il ne fonctionne pas dans les moteurs classiques. Notre carburant liquide fonctionne avec les moteurs et les infrastructures qui existent déjà." },
@@ -66,9 +66,8 @@ window.SLIDES = [
     title: "Market 1: the power grid",
     speaker: "Lelio",
     notes: [
-      "Thanks, Eloi. So, who needs this? We actually see two main markets for our technology. First, at a large industrial scale, for cities and energy companies.",
-      "As we shift towards more wind or solar power, it becomes harder to manage fluctuations in our electricity production.",
-      "Since we can’t control the weather, we will face major peaks when production exceeds demand.",
+      "Thanks, Eloi. So, who needs this? We actually see two main markets for our technology. First, for cities and energy companies.",
+      "The more we develop wind or solar power, the more it's harder to manage fluctuations in our electricity production. Specially when production exceeds demand",
       "[Montrer le graphique] For example, in California, the wind and solar power that is wasted every year more than doubled in just three years.",
       "With our system, we can absorb that excess electricity to capture carbon dioxide and produce fuel. So, in a way, our machine acts like a big liquid battery that helps stabilize the power grid, while making fuel that works in normal engines.",
     ],
